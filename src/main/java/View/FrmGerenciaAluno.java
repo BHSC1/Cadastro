@@ -288,9 +288,7 @@ public class FrmGerenciaAluno extends javax.swing.JFrame {
             if (this.Tabela.getSelectedRow() == -1) {
                 throw new Mensagens("Primeiro Selecione umAluno para APAGAR");
             } else {
-                id = Integer.parseInt(this.Tabela.
-                        getValueAt(this.Tabela.getSelectedRow(), 0).
-                        toString());
+                id = Integer.parseInt(this.Tabela.getValueAt(this.Tabela.getSelectedRow(), 0).toString());
             }
 // retorna 0 -> primeiro botão | 1 -> segundo botão | 2 -> terceiro botão
             int respostaUsuario = JOptionPane.
